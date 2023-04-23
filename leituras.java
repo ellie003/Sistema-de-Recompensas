@@ -37,7 +37,7 @@ public class leituras {
                     // Armazenar os dados em um arquivo de texto
                     try {
                         FileWriter writer = new FileWriter("dados.txt", true);
-                        writer.write("Meta alcançada: " + metas[i] + " vendas. Recompensa: " + recompensas[i] + "\n");
+                        writer.write("Meta alcançada: " + metas[i] + " paginas lidas. Recompensa: " + recompensas[i] + "\n");
                         writer.close();
                     } catch (IOException e) {
                         System.out.println("Erro ao gravar os dados em arquivo.");
@@ -47,7 +47,7 @@ public class leituras {
             
             leituras += quantPaginas;
             
-            System.out.println("Você já fez " + leituras + ".");
+            System.out.println("Você leu " + leituras + " paginas.");
             System.out.println("Pressione 's' para sair ou qualquer outra tecla para continuar.");
             String resposta = scanner.next();
             if (resposta.equals("s")) {
